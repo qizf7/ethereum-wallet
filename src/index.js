@@ -11,6 +11,7 @@ const STATUSBAR_CONFIG = {
     translucent: false
 };
 
+
 export default class Application extends React.Component {
 
     componentDidMount() {

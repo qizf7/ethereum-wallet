@@ -1,5 +1,7 @@
 {
-  "presets": ["react-native"],
+  "presets": [
+    "module:metro-react-native-babel-preset"
+  ],
   "plugins": [
     ["module-resolver", {
       "alias": {
@@ -9,10 +11,11 @@
       }
     }],
     ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    // ["@babel/plugin-proposal-class-properties", { "loose" : true }],
     ["@babel/plugin-transform-runtime", {
       "helpers": true,
-      "polyfill": false,
       "regenerator": false
-    }]
+    }],
+    "@babel/plugin-proposal-nullish-coalescing-operator"
   ]
 }
