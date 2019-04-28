@@ -58,3 +58,4 @@ buck-out/
 *.jsbundle
 
 ios/Index
+index.android.bundle

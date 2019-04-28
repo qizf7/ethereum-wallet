@@ -9,7 +9,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "android:build": "cd android && ./gradlew assembleDebug && cd .. && cp android/app/build/outputs/apk/debug/app-debug.apk EthereumWallet.apk",
-    "android:bundle": "react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug",
+    "android:bundle": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res/",
     "android:clean": "cd android && ./gradlew clean && cd ..",
     "android:generate-apk": "npm run android:bundle && npm run android:build",
     "android": "react-native run-android",
